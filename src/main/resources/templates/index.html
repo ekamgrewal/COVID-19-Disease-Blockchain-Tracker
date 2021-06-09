@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmls:th="http://www.thymeleaf.org">
+<head>
+	<title>Healthchain Home Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link th:href="@{/css/index.css}"/>
+</head>
+<body>
+	<div class="PageHeader">
+		<h1>HEALTHCHAIN</h1>
+		<h3>Because secureness is next to healthiness</h3>
+	</div>
+
+	<div class="ButtonsSection">
+		<button type="button" th:onclick="|window.location.href='/patients'|">Patients</button>
+		<button type="button" th:onclick="|window.location.href='/diseases'|">Diseases</button>
+		<button type="button" th:onclick="|window.location.href='/hospitals'|">Hospitals</button>
+	</div>
+</body>
+</html>

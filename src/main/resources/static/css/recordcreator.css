@@ -1,0 +1,73 @@
+body {
+	align-items: center;
+}
+
+.RecordCreationHeader {
+	font-family: "Lucia Console";
+	font-size: 1.0em;
+	text-align: center;
+	min-width: 40px;
+	display: flex;
+}
+
+.RecordCreationSelector h2 {
+	text-align: center;
+	font-family: "Lucia Console";
+	min-width: 30px;
+	display: flex;
+}
+
+.RecordCreationSelector form {
+	text-align: center;
+	font-family: "Lucia Console";
+}
+
+.RecordCreator div {
+	margin: 30px 0px;
+	width: 500px;
+	min-width: 200px;
+	clear: both;
+}
+
+.RecordCreator fieldset {
+	border-radius: 4px;
+}
+
+.RecordCreator input {
+	width: 100%;
+	clear: both;
+}
+
+.PatientPersonalDetails {
+	min-width: 100px;
+}
+
+.PatientDemographics input[type=text] {
+	font-family: "Lucia Console";
+}
+
+form {
+	margin: 10px 0px;
+}
+
+label {
+	display: inline-block;
+	padding: 3px 6px;
+	text-align: right;
+	width: 150px;
+}
+
+textarea {
+	width: 100%;
+	height: 500px;
+	min-width: 500px;
+	min-height: 300px;
+}
+
+.Submit {
+	margin: 10px 0px 0px 0px;
+}
+
+button {
+	padding: 15px 32px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Healthchain Patient Records Page</title>
+	<link th:href = "@{/css/recordviewer.css}">
+</head>
+
+<body>
+	<div class="RecordsHeader">
+		<h1>Patient Records</h1>
+	</div>
+
+	<div class="RecordsTable">
+		<table id="records">
+			<thead>
+				<tr>
+					<th>Insurance ID</th>
+					<th>Name</th>
+					<th>Information</th>
+					<th>Age</th>
+					<th>Date Added</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr >
+					<td>54783245</td>
+					<td>Joaquin Crowe</td>
+					<td>Coughs, shortness of breath</td>
+					<td>42</td>
+					<td>3/15/2021</td>
+				</tr>
+		  </tbody>
+		</table>
+	</div>
+
+</body>
+</html>

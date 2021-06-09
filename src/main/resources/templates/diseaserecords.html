@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Healthchain Disease Records Page</title>
+	<link th:href = "@{/css/recordviewer.css}">
+</head>
+
+<body>
+	<div class="RecordsHeader">
+		<h1>Disease Records</h1>
+	</div>
+
+	<div class="RecordsTable">
+		<table id="records">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Symptoms</th>
+					<th>Diagnostitian ID</th>
+					<th>Date Diagnosed</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>SARS</td>
+					<td>Fever, chills, dry cough, shortness of breath</td>
+					<td>45274384</td>
+					<td>3/15/2021</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>

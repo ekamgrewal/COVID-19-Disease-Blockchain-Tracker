@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Healthchain Disease Records Creator Page</title>
+  <link th:href = "@{/css/recordcreator.css}">
+</head>
+
+<body>
+  <div class="RecordCreationHeader">
+ 		<h1>Hospital Record Creator</h1>
+  </div>
+
+  <div class="RecordCreator">
+
+        <form action="#" th:action="|window.location.href='/hospitals/recordSubmitted'|'" th:object="${hospitalInfo}" method="post">
+          <div class="DiseaseDetails">
+              <fieldset>
+                <legend style="color: crimson; font-size:1.5em; font-weight: bold; text-align: center; margin: 0px 10px 0px 0px;">Hospital Details</legend>
+
+                <label for="hospitalName">Name:</label>
+                <input type="text" th:field="*{HospitalName}" id="hospitalName" th:name="hospitalName"/><br/><br/>
+                <label for="hospitalLocation">Location:</label>
+                <input type="text" th:field="*{HospitalLocation}" id="hospitalLocation" th:name="hospitalLocation"/><br/><br/>
+              </fieldset>
+          </div>
+
+          <div class="Submit">
+            <input type="submit" value="Submit"/>
+          </div>
+        </form>
+
+        <form th:action="|window.location.href='/hospitals/recordCancelled'|" method="get">
+            <button type="submit" name="cancel" value="Cancel">Cancel</button>
+        </form>
+  </div>
+</body>
+</html>

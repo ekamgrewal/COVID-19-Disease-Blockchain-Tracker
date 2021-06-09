@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Healthchain Patient Records Creator Page</title>
+  <link th:href = "@{/css/recordcreator.css}">
+</head>
+
+<body>
+
+  <div class="RecordCreationHeader">
+		<h1>Patient Record Creator</h1>
+	</div>
+
+  <div class="RecordCreator">
+    <form action="#" th:action="|window.location.href='/patients/recordSubmitted'|" th:object="${PatientInfo}" method="post">
+      <div class="PatientPersonalDetails">
+		      <fieldset>
+          <legend style="color: crimson; font-size:1.5em; font-weight: bold; text-align: center; margin: 0px 10px 0px 0px;">Patient Information</legend>
+
+            <label for="patientName">Name:</label>
+            <input type="text" th:field="*{PatientName}" id="patientName" th:name="patientName"/><br/><br/>
+            <label for="patientAge">Age:</label>
+            <input type="text" th:field="*{PatientAge}" id="patientAge" th:name="patientAge"/><br/><br/>
+            <label for="patientInfo">Insurance ID:</label><br/>
+            <input type="text" th:field="*{insuranceID}" id="insuranceId" th:name="insuranceId"/><br/><br/>
+            <label for="patientInfo">Information:</label><br/>
+            <textarea name="patientInfo" th:field="*{PatientInfo}" id="patientInfo" th:name="patientInfo"></textarea>
+		       </fieldset>
+      </div>
+
+      <div class="Submit">
+        <input type="submit" value="Submit"/>
+      </div>
+    </form>
+    <br/>
+    <form th:action="|window.location.href='/patients/recordCancelled'|" method="get">
+        <button type="submit" name="cancel" value="Cancel">Cancel</button>
+    </form>
+  </div>
+</body>
+</html>
